@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>webKit</title>
+		<script type="text/javascript">
+			function SendToQt(){
+				alert(1);
+				var testArray ;
+				testArray = document.getElementsByName("sendToQt");
+				window.mywebkit.onCall(testArray[0].value);
+			}
+			
+			function onMsgFromQt(qtText){
+				var testArray ;
+				testArray = document.getElementsByName("sendToQt");
+				testArray[0].value =  qtText;
+			}
+		</script>
+	</head>
+	<body>
+		<p align="center">Text:
+		    <input type="text"  name="testText"/>
+		    
+		</p>
+		
+		<p align="center">
+			<input type="button" value="sendToQt" onclick="SendToQt()"/>
+		</p>
+	</body>
+</html>

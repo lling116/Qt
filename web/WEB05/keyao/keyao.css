@@ -1,0 +1,81 @@
+#logo{
+	width: 100%;
+	height: 80px;
+	margint: 0px;
+	top: 0;
+	background-color: white;
+	position: fixed;
+	-webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+    z-index: 100;
+}
+			
+#headTitle{
+	background-color: whitesmoke;
+	width: 100%;	
+	margin: 0;	
+	padding: 0;	
+}
+
+#logo span{
+	
+	float: right;
+	padding-top: 30px;
+	margin-left: 20px;
+	font-style: oblique ;
+	color: chocolate;
+}
+
+		
+.div_clolor{
+	background-color: white;
+	width: 950px;
+	margin-left: 70px;
+	margin-top: 20px
+	-webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+
+}
+		
+.div_inline{
+	background-color: white;
+	width: 437px;
+	height: 256px;
+	margin-left: 70px;
+	-webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+
+}
+		
+#main{
+	-webkit-box-shadow: #666 0px 0px 10px;
+    -moz-box-shadow: #666 0px 0px 10px;
+    box-shadow: #666 0px 0px 10px;
+    width: 482px;
+    height: 256px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 30px;
+    position: absolute;"
+}
+		
+.buttonShrink{
+	margin-left: 900px;
+	margin-top: 10px;
+}
+
+.Inv{
+	height: 200px;
+}
+
+
+.dataTable{
+	text-align: center;
+	margin-left: 30%;
+	display: block;
+	
+}
+	    

@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/keyao">
+        <file>keyao/echarts.min.js</file>
+        <file>keyao/keyao.css</file>
+        <file>keyao/keyao.js</file>
+        <file>keyao/ky5000.html</file>
+        <file>keyao/image/keyao.jpg</file>
+        <file>keyao/index.html</file>
+        <file>keyao/web.html</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,7 @@
+1.功能：使用预定义的模型；提供一个树形树图
+2.需要和QTreeWidgetItem Class 组合使用
+
+知识梳理：
+     *树形图，就像二叉树；我们以QTreeWidget为根；以QTreeWidgetItem为节点；QTreeWidgetItem也可以是QTreeWidgetItem的子节点；同一级有相同的父节点；！
+
+    *菜单和动作也类似于二叉树：菜单可以包含动作也可以包含菜单（子菜单）；同一级的菜单和动作有着相同的父菜单

@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/keyao">
+        <file>keyao/echarts.min.js</file>
+        <file>keyao/ky5000.html</file>
+    </qresource>
+</RCC>

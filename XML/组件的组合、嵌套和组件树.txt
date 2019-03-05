@@ -1,0 +1,6 @@
+
+             组件的组合、嵌套和组件树
+			 http://huziketang.mangojuice.top/books/react/lesson8
+			 
+			 1.自定义的组件都必须要用大写字母开头，普通的 HTML 标签都用小写字母开头。
+			 2.

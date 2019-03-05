@@ -1,0 +1,25 @@
+QT 中视图简洁和使用
+
+1.优点：
+    1.在处理较大的数据时每个组件各司其职，不至于降低性能
+	2.一个model 可以映射到多个view,这样可以不同的方式查看数据桶一份数据
+	3.如果底层数据源改变了，我们只需要处理model就行了
+	
+2.模型的基类
+    QAbstractItemModel:
+	QAbstracttProxyModel
+	QAbstractrTableModel
+	QAbstractrListModel
+	
+3.视图的基类
+     QAbstractItemView
+	 QColmunView
+	 QHeaderView
+	 QListView
+	 QTableView
+	 QTreeView
+	 
+	 
+	 
+同一模型可以被多个视图绑定：
+	 

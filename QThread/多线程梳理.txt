@@ -1,0 +1,25 @@
+一.Qt 包含下面一些线程相关的类：
+
+QThread 提供了开始一个新线程的方法
+QThreadStorage 提供逐线程数据存储
+QMutex  提供相互排斥的锁，或互斥量
+QMutexLocker 是一个便利类，它可以自动对QMutex加锁与解锁
+QReadWriterLock 提供了一个可以同时读操作的锁
+QReadLocker与QWriteLocker 是便利类，它自动对QReadWriteLock加锁与解锁
+QSemaphore 提供了一个整型信号量，是互斥量的泛化
+QWaitCondition 提供了一种方法，使得线程可以在被另外线程唤醒之前一直休眠。
+
+二.Qt线程的创建：
+   Qt线程中有一个公共的抽象类，所有的线程都是从这个QThread抽象类中派生的，
+要实现QThread中的纯虚函数run(),run()函数是通过start()函数来实现调用的！
+另外还有一种moveTothread,来创建线程！
+
+三.线程同步：
+   QMutex ( bool recursive = FALSE )  
+   //试图锁定互斥量。如果另一个线程已经锁定这个互斥量，那么这次调用将阻塞直到那个线程把它解锁。
+    1.void lock ()  和void unlock ()
+	2.bool locked ()
+	//如果另一个进程已经锁定了这个互斥量，这个函数返回假，而不是一直等到这个锁可用为止，比如，它不是阻塞的。
+	3.bool tryLock () 
+
+

@@ -1,0 +1,12 @@
+        组件的render方法
+一个组件类必须要实现一个 render 方法，这个 render 方法必须要返回一个 JSX 元素。
+但这里要注意的是，必须要用一个外层的 JSX 元素把所有内容包裹起来。返回并列多个 JSX 元素是不合法的，
+2.{} 内可以放任何 JavaScript 的代码，包括变量、表达式计算、函数执行等等。
+render 会把这些代码返回的内容如实地渲染到页面上，非常的灵活。
+
+3.两个特殊关键字：
+注意，直接使用 class 在 React.js 的元素上添加类名如 <div class=“xxx”> 这种方式是不合法的。因为 class 
+是 JavaScript 的关键字，所以 React.js 中定义了一种新的方式：className 来帮助我们给元素添加类名。
+还有一个特例就是 for 属性，例如 <label for='male'>Male</label>，因为 for 也是 JavaScript 的关键字，
+所以在 JSX 用 htmlFor 替代，即 <label htmlFor='male'>Male</label>。而其他的 HTML 属性例如 style 、data-* 
+等就可以像普通的 HTML 属性那样直接添加上去。

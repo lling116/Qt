@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/html">
+        <file>QtWeb/echarts.html</file>
+        <file>QtWeb/echarts.min.js</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,40 @@
+xml文件就是普通文件，一般编码格式就是utf-8，只不过文本内容是以树形结构进行组织，
+
+优点是：     不借助其他应用，使文本内容进行结构化组织。
+缺点是：     由于有各种节点信息，整个文本体积庞大,可以用json,关于json下一列子在
+详细的说明！！
+
+xml学习连接：http://www.w3school.com.cn/xml/index.asp
+
+xml的操作方法：
+   我们知道对XML的操作有两种方法，即DOM方式和SAX方式。
+   二者主要区别是：DOM实现方式操作非常简单，但不适合处理过大文件；
+   、而SAX实现方式是能处理很大的XML文件，但是需要开发者写一些复杂的代码。
+   Qt提供了对应于这两种用于读取、操作和编写XML的实现类，
+   分别是QDomDocument类和QXmlStreamReader类，由于在项目中涉及的文件不大，
+   因此我们选用QDomDocument类来处理。
+   
+xml的节点创建，主要操作包括：
+
+1).创建根节点：QDomElement root = doc.documentElement("rootName " );
+
+2).创建元素节点：QDomElement element = doc.createElement("nodeName");
+
+3).添加元素节点到根节点：root. appendChild(element);
+
+4).创建元素文本：QDomText nodeText=doc.createTextNode("text");
+
+5).添加元素文本到元素节点：element. appendChild(nodeText);
+
+读取xml的操作主要有：
+1).读取根节点：QDomElement root = doc.documentElement();
+2).读取第一个子节点：QDomNode node = root.firstChild();
+3).读取下一个子节点：node = node.nextSibling();
+4).匹配结点标记：node.toElement().tagName() == "note"
+5).读取节点文本：no = childNode.toText().data();
+
+学过JS的可以知道，这一点类似于JS 操作！！！
+
+
+   
+

@@ -1,0 +1,18 @@
+            tcp聊天室
+一.套接字
+套接字的方法：
+ #当IO有数据时，会触发readyRead()信号；
+ #bytesAvailable()表示套接字接收数据的字节数
+ #方法read(char*buf,int);把接收的数据读到buf 里面
+ 
+ //note:通过信号和曹函数的方法可以把套接字的数据
+ #write(char*buf,int len);把数据发送到服务户端
+ #setSocketDescriptor(int socketDescriptor)，设置套接字
+ #socketDescriptor()获取套接字
+ #connectToHost（QHostAddress ip，int port）；//建立连接，连接地址和端口号，一般是指客户端
+ #disconnectFromHost()断开连接（客户端）
+ 
+二.QTcpServer
+ #listen(QHostAddress::Any,port);设置监听的网段和端口号
+ #incomingConnection(int socketDescriptor),当QTcpServer有新链接时
+ 这个虚函数被调用；socketDescriptor是该套接字的描述符,会被传进来

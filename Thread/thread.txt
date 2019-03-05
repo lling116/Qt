@@ -1,0 +1,21 @@
+          QThread两种方法实现多线程
+1.重写run函数，start方法启动多线程
+2.moveToThread方法
+ 
+QThread中的方法
+*terminate()终止线程
+*wait()等待线程退出
+
+             #信号量
+#信号量freeBytes(size),控制可被生产者填充的缓冲区部分，size
+表示一开始缓冲区域大小！
+
+#usedBytes(size)信号量控制可被消费者读取的缓冲区部分，一般初始化为0
+
+&信号量的方法：
+#acquire(),生产者获取1个空闲单元
+#release()：调用该函数可用资源加1，表示消费者可以读取刚刚填写的
+单元
+
+
+
